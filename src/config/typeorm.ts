@@ -15,8 +15,8 @@ const config = {
     entities: ['dist/**/*.entity{.ts,.js}'],
     migrations: ['dist/migrations/*{.ts,.js}'],
     logging: false, // A true para ver transacciones en la base de datos
-    synchronize: true, // A false en producción
-    dropSchema: true, // A false en producción
+    synchronize: false, // A false en producción
+    dropSchema: false, // A false en producción
 };
 
 export default registerAs('typeorm', () => config);
