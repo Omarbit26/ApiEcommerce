@@ -24,7 +24,7 @@ async function bootstrap() {
   app.use(LoggerMiddleware)
   app.useGlobalPipes(new ValidationPipe());
 
-  await app.listen(PORT).then((res)=>{console.log(`Iniciando servidor en puerto ${PORT}`)});
+  await app.listen(PORT);
 
 }
 bootstrap();
